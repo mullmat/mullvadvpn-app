@@ -99,13 +99,14 @@ private val LocalAppDimens = staticCompositionLocalOf { defaultDimensions }
 fun AppTheme(content: @Composable () -> Unit) {
     val colors = MullvadColorPalette
     val typography = MullvadTypography
+    val shapes = MullvadMaterial3Shapes
     // Set dimensions and type scale based on configurations here
     val dimensions = defaultDimensions
 
     ProvideDimens(dimensions = dimensions) {
         MaterialTheme(
             colorScheme = colors,
-            shapes = Shapes,
+            shapes = shapes,
             typography = typography,
             content = content
         )
