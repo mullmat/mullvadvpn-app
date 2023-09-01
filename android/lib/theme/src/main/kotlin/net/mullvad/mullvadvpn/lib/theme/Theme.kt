@@ -76,14 +76,6 @@ private val MullvadColorPalette =
         inverseSurface = MullvadWhite
     )
 
-val Shapes =
-    Shapes(
-        small = RoundedCornerShape(4.dp),
-        medium = RoundedCornerShape(4.dp),
-        large = RoundedCornerShape(0.dp),
-        extraLarge = RoundedCornerShape(4.dp)
-    )
-
 val Dimens: Dimensions
     @Composable get() = LocalAppDimens.current
 
